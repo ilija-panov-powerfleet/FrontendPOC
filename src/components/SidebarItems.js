@@ -1,23 +1,23 @@
 const SidebarItems = [
     {
-        name: "THE ITALIAN JOB",
+        name: "React Learning",
         route: '/'
     },
     {
-        name: "Dashboard",
-        route: '/dashboard',
+        name: "Home",
+        route: '/home',
     },
     {
-        name: "Page 1",
-        route: '/page-1'
+        name: "Counter",
+        route: '/counter'
     },
     {
-        name: "Page 2",
-        route: '/page-2'
+        name: "People",
+        route: '/people'
     },
     {
-        name: "Page 3",
-        route: 'page-3'
+        name: "WeatherForecast",
+        route: '/fetchData'
     },
 ];
 

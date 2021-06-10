@@ -1,20 +1,21 @@
 import React from 'react';
-import Routes from "../routes";
 import Sidebar from "./Sidebar";
 import Nav from "./Nav";
 
 function Layout(props) {
     return (
+        <>
         <div>
             <div style={{display: "flex"}}>
                 <Sidebar history={props.history}/>
-                <div style={{maxWidth: '800px'}}>
-                    <Nav/>
+                <div style={{width: '100%'}}>
+                    <Nav style={{float: 'right', 'flex-direction': 'row', 'padding': '20px', 'border-bottom': '1px' }}/>
                     {props.children}
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
-export default Layout;
+ export default Layout;

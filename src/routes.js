@@ -1,9 +1,9 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Page1 from "./pages/Page-1";
-import Page2 from "./pages/Page-2";
-import Page3 from "./pages/Page-3";
-import Dashboard from "./pages/Dashboard";
+import Counter from "./pages/Counter";
+import People from "./pages/People";
+import WeatherForecast from "./pages/WeatherForecast";
+import Dashboard from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -14,10 +14,10 @@ function Routes() {
                 <Layout {...props}>
                     <Switch>
                         <Route path="/" exact component={Dashboard}/>
-                        <Route path="/dashboard" exact component={Dashboard}/>
-                        <Route path="/page-1" component={Page1}/>
-                        <Route path="/page-2" component={Page2}/>
-                        <Route path="/page-3" component={Page3}/>
+                        <Route path="/home" exact component={Dashboard}/>
+                        <Route path="/counter" component={Counter}/>
+                        <Route path="/people" component={People}/>
+                        <Route path="/fetchData" component={WeatherForecast}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </Layout>
